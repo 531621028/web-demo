@@ -16,7 +16,7 @@ public class ScheduledTasks {
     public void fixedRateTest() {
         LOG.info("fixedRateTest execute " + DateTime.now().toString("yyyy-MM-dd HH:mm:ss"));
         LOG.error("errorMsg");
-        throw new RuntimeException();
+//        throw new RuntimeException();
     }
 
     @Scheduled(cron = "0/10 * * * * ?")
