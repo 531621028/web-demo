@@ -17,8 +17,10 @@ public class User {
     //状态
     private Integer status;
 
-    public static User fromUserEntity(UserEntity userEntity) {
-        return BeanUtils.copy(userEntity, User.class);
+    public static User fromEntity(UserEntity userEntity) {
+        User user = BeanUtils.copy(userEntity, User.class);
+        user.setUserId(userEntity.getId());
+        return user;
     }
 
     public long getUserId() {

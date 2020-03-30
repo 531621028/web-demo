@@ -7,7 +7,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @MapperScan("com.hkk.webdemo.mapper")
-@EnableScheduling
+//@EnableScheduling
 public class WebDemoApplication {
 
   public static void main(String[] args) {

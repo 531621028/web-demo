@@ -1,11 +1,11 @@
-package com.hkk.webdemo.task;
+package com.hkk.webdemo.config;
 
 import java.util.concurrent.Executors;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.SchedulingConfigurer;
 import org.springframework.scheduling.config.ScheduledTaskRegistrar;
 
-@Configuration
+//@Configuration
 public class ScheduleConfig implements SchedulingConfigurer {
 
     @Override
